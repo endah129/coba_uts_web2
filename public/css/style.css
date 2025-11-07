@@ -1,0 +1,34 @@
+.main-title {
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Menggunakan CSS Grid untuk tata letak 3x3 */
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 kolom dengan lebar yang sama */
+    gap: 15px; /* Jarak antar kotak */
+    padding: 20px;
+}
+
+.grid-item {
+    height: 250px; 
+    background-size: cover;
+    background-position: center;
+    display: flex; /* Untuk menempatkan teks di bawah */
+    align-items: flex-end;
+    position: relative; /* Penting untuk overlay */
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.overlay-text {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.6); /* Latar belakang semi-transparan */
+    color: white;
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+}
